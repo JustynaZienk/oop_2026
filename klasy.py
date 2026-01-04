@@ -8,7 +8,8 @@ class Czlowiek:
         self.imie =imie
         self.plec= plec
         #adam.imie = "Adam"
-
+    def __add__(self, other):
+        pass
         #Metoda
     def przedstaw_sie(self):
         print(f"dzien dobry mam na imie {self.imie} i jestem", end =" ")
@@ -33,7 +34,7 @@ class Dziecko(Czlowiek):
             print("chlopcem")
         else:
             print("dziwczynka")
-
+kain=Dziecko("Kain", "M")
 print(adam.gatunek)
 print(ewa.gatunek)
 print(ewa.imie)
@@ -44,3 +45,7 @@ ewa.przedstaw(adam)
 dziecko = Dziecko("Kain", "M")
 dziecko.baw_sie()
 dziecko.przedstaw_sie()
+print(Czlowiek)
+print(kain)
+print(dir(Czlowiek))
+print(dir(kain))
